@@ -1,5 +1,11 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import "./css/breakpoints_prefixed.css";
+import "./css/slick.css";
+
+import Script from "next/script";
+import './css/styles_prefixed.css';
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -21,6 +27,22 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
+        <Script src="/js/TweenMax.min.js"/> 
+ <Script src="/js/ScrollToPlugin.min.js"/> 
+
+
+ <Script src="/js/jquery.min.js"/> 
+ <Script src="/js/modernizr-custom.js"/> 
+ <Script src="/js/jquery.inview.min.js"/> 
+ <Script src="/js/social-icons.js"/>
+ <Script src="/js/smartresize.js"/> 
+ <Script src="/js/slick.min.js"/> 
+ <Script src="/js/imagesloaded.js"/> 
+ <Script src="/js/isotope.pkgd.min.js"/> 
+ <Script src="/js/player.js"/> 
+ <Script src="/js/site.js"/> 
+
+
       </body>
     </html>
   );
